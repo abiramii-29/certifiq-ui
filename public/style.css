@@ -1,0 +1,96 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Certificate Container */
+.certificate-container {
+    padding: 20px;
+}
+
+/* Certificate Styling */
+.certificate {
+    width: 900px;
+    height: 600px;
+    border: 10px solid #5e2d91;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.certificate-header {
+    margin-bottom: 20px;
+}
+
+.certificate-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.certificate-title {
+    font-size: 28px;
+    color: #5e2d91;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.certificate-tagline {
+    font-size: 20px;
+    font-style: italic;
+    color: #5e2d91;
+    margin-top: 10px;
+    margin-bottom: 30px; /* Add spacing around the tagline */
+}
+
+
+/* Body */
+.certificate-body {
+    margin-top: 20px;
+}
+
+.certificate-text {
+    font-size: 18px;
+    margin: 10px 0;
+    margin: 20px 0;
+}
+
+.certificate-name {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+}
+
+.certificate-event, .certificate-date {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+/* Footer */
+.certificate-footer {
+    margin-top: 40px;
+}
+
+.signature-container {
+    display: flex;
+    justify-content: space-around; /* Distributes the signatures evenly */
+    align-items: center;
+    margin-top: 40px;
+}
+
+.signature {
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+    width: 40%; /* Set a width for equal alignment */
+}
+

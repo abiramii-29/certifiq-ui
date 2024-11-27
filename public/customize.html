@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertifiQ - Customize Certificate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar -->
+        <div class="side-menu">
+            <div class="logo-group">
+                <div class="dummy-logo">
+                    <span class="vector vector1"></span>
+                    <span class="vector vector2"></span>
+                    <span class="vector vector3"></span>
+                    <span class="vector vector4"></span>
+                </div>
+                <span class="brand-name">CertifiQ</span>
+            </div>
+            <nav class="sidebar-links">
+                <a href="dashboard.html" class="sidebar-item">Dashboard</a>
+                <a href="upload.html" class="sidebar-item">Upload Excel</a>
+                <a href="themes.html" class="sidebar-item">Themes</a>
+                <a href="customize.html" class="sidebar-item">Customize Certificate</a>
+                <!--<a href="#" class="sidebar-item">Sign and Approval</a>-->
+                <a href="email.html" class="sidebar-item">Email Distribution</a>
+                <!--<a href="#" class="sidebar-item">Upload</a>-->
+            </nav>
+            <a href="index.html" id="home" class="home-link">
+                <img src="home.png" alt="Home icon"> <span>Home</span>
+            </a>
+        </div>
+        <!--  -->
+        
+        <!-- Navbar -->
+        <header class="top-bar">
+            <h1 class="dashboard-title">Customize Certificate</h1>
+            <div class="user-info">
+                <img src="https://via.placeholder.com/40x40" alt="User Profile" class="profile-pic" />
+                <div class="user-details">
+                    <strong>Musfiq</strong>
+                    <small>Admin</small>
+                </div>
+            </div>
+        </header>
+        <!--  -->
+        <div class="customize-certificate-container">
+        
+            <!-- Main Content Wrapper -->
+            <div class="main-content">
+                <!-- Toolbar -->
+                <div class="toolbar">
+                    <label>Font:</label>
+                    <select id="font-style">
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Verdana">Verdana</option>
+                    </select>
+                    <label>Font Size:</label>
+                    <input type="number" id="font-size" min="8" max="72" placeholder="12">
+                    <label>Text Color:</label>
+                    <input type="color" id="text-color">
+                    <label>Align:</label>
+                    <select id="text-align">
+                        <option value="left">Left</option>
+                        <option value="center">Center</option>
+                        <option value="right">Right</option>
+                    </select>
+                    <button id="bold-btn">Bold</button>
+                    <button id="italic-btn">Italics</button>
+                    <button id="underline-btn">Underline</button>
+                </div>
+                
+                <!-- Certificate customize -->
+                <div class="certificate-customize">
+                    <img src="certificate1.png" alt="Certificate Preview" id="certificate-customize-image">
+                </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button id="add-text-btn">Add Text</button>
+                <button id="add-image-btn">Add Image</button>
+                <button id="save-btn">Save</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

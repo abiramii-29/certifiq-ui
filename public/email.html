@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertifiQ - Email distribution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar -->
+        <div class="side-menu">
+            <div class="logo-group">
+                <div class="dummy-logo">
+                    <span class="vector vector1"></span>
+                    <span class="vector vector2"></span>
+                    <span class="vector vector3"></span>
+                    <span class="vector vector4"></span>
+                </div>
+                <span class="brand-name">CertifiQ</span>
+            </div>
+            <nav class="sidebar-links">
+                <a href="dashboard.html" class="sidebar-item">Dashboard</a>
+                <a href="upload.html" class="sidebar-item">Upload Excel</a>
+                <a href="themes.html" class="sidebar-item">Themes</a>
+                <a href="customize.html" class="sidebar-item">Customize Certificate</a>
+                <!--<a href="#" class="sidebar-item">Sign and Approval</a>-->
+                <a href="email.html" class="sidebar-item">Email Distribution</a>
+                <!--<a href="#" class="sidebar-item">Upload</a>-->
+            </nav>
+            <a href="index.html" id="home" class="home-link">
+                <img src="home.png" alt="Home icon"> <span>Home</span>
+            </a>
+        </div>
+        
+        <!-- Navbar -->
+        <header class="top-bar">
+            <h1 class="dashboard-title">Themes</h1>
+            <div class="user-info">
+                <img src="https://via.placeholder.com/40x40" alt="User Profile" class="profile-pic" />
+                <div class="user-details">
+                    <strong>Musfiq</strong>
+                    <small>Admin</small>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="main-content">
+        <div class="email-container">
+          <h2>Theme 1</h2>
+          <div class="upload-section">
+            <label>Upload Generated Certificate File</label>
+            <!-- File input field can be added here if needed -->
+          </div>
+          <div class="email-form">
+            <h3>New Message</h3>
+            <input type="text" placeholder="Recipients" class="email-input" />
+            <input type="text" placeholder="Subject" class="email-input" />
+            <textarea placeholder="Body Text" class="email-textarea"></textarea>
+            <button type="submit" class="send-btn">Send</button>
+          </div>
+        </div>
+      </div>
+</body>
+</html>      

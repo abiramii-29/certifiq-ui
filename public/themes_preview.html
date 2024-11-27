@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertifiQ - Themes Preview</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar -->
+        <div class="side-menu">
+            <div class="logo-group">
+                <div class="dummy-logo">
+                    <span class="vector vector1"></span>
+                    <span class="vector vector2"></span>
+                    <span class="vector vector3"></span>
+                    <span class="vector vector4"></span>
+                </div>
+                <span class="brand-name">CertifiQ</span>
+            </div>
+            <nav class="sidebar-links">
+                <a href="dashboard.html" class="sidebar-item">Dashboard</a>
+                <a href="upload.html" class="sidebar-item">Upload Excel</a>
+                <a href="themes.html" class="sidebar-item">Themes</a>
+                <a href="customize.html" class="sidebar-item">Customize Certificate</a>
+                <!--<a href="#" class="sidebar-item">Sign and Approval</a>-->
+                <a href="email.html" class="sidebar-item">Email Distribution</a>
+                <!--<a href="#" class="sidebar-item">Upload</a>-->
+            </nav>
+            <a href="index.html" id="home" class="home-link">
+                <img src="home.png" alt="Home icon"> <span>Home</span>
+            </a>
+        </div>
+        
+        <!-- Navbar -->
+        <header class="top-bar">
+            <h1 class="dashboard-title">Customize Certificate</h1>
+            <div class="user-info">
+                <img src="https://via.placeholder.com/40x40" alt="User Profile" class="profile-pic" />
+                <div class="user-details">
+                    <strong>Musfiq</strong>
+                    <small>Admin</small>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="customize-certificate-container">
+        <div class="certificate-preview">
+            <img id="certificateImage" src="certificate1.png" alt="Certificate Preview">
+        </div>
+    </div>
+
+    <script>
+    function getCertificateId() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('id');
+    }
+
+    function loadCertificatePreview() {
+        const certificateId = getCertificateId();
+        const certificateImage = document.getElementById('certificateImage');
+        
+        switch (certificateId) {
+            case '1':
+                certificateImage.src = 'certificate1.png';
+                break;
+            case '2':
+                certificateImage.src = 'certificate2.png';
+                break;
+            case '3':
+                certificateImage.src = 'certificate3.png';
+                break;
+            case '4':
+                certificateImage.src = 'certificate4.png';
+                break;
+            case '5':
+                certificateImage.src = 'certificate3.png';
+                break;
+            case '6':
+                certificateImage.src = 'certificate4.png';
+                break;
+            case '7':
+                certificateImage.src = 'certificate1.png';
+                break;
+            case '8':
+                certificateImage.src = 'certificate2.png';
+                break;
+            case '9':
+                certificateImage.src = 'certificate2.png';
+                break;
+            case '10':
+                certificateImage.src = 'certificate1.png';
+                break;
+            case '11':
+                certificateImage.src = 'certificate4.png';
+                break;
+            case '12':
+                certificateImage.src = 'certificate3.png';
+                break;
+            default:
+                certificateImage.alt = 'Certificate not found';
+                certificateImage.src = ''; // Clear image if not found
+        }
+    }
+
+    window.onload = loadCertificatePreview;
+    </script>
+</body>
+</html>
